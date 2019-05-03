@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card'
 
 const Character = ({name, status, image, origin}) => {
     return (
-        <Col md={3}>
+        <Col md={3} className="card-center">
             <Card style={{ margin: '10px', width: '18rem'}}>
                 <Card.Img variant="top" src={image} />
                 <Card.Body>

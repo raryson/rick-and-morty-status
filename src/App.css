@@ -7,6 +7,22 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .title {
+    margin-left: 15px;
+    font-family: 'rick-and-morty';
+    font-size: 4em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #00b0c8;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black, -3px 0 yellow, 0 3px yellow, 3px 0 yellow, 0 -3px yellow, -4px 0 5px #80c55e, 0 4px 5px #80c55e, 4px 0 5px #80c55e, 0 -4px 5px #80c55e;
+  }
+  .card-center {
+    margin-left: 30px;
+  }
+}
+
 .title {
   font-family: 'rick-and-morty';
   font-size: 4em;

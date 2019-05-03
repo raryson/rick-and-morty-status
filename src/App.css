@@ -1,9 +1,14 @@
+@font-face {
+  font-family: rick-and-morty;
+  src: url(./font/schwifty.ttf);
+}
+
 .App {
   text-align: center;
 }
 
 .title {
-  font-family: 'Get Schwifty';
+  font-family: 'rick-and-morty';
   font-size: 4em;
   margin-top: 20px;
   margin-bottom: 20px;

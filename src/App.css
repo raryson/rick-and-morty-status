@@ -12,14 +12,21 @@
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black, -3px 0 yellow, 0 3px yellow, 3px 0 yellow, 0 -3px yellow, -4px 0 5px #80c55e, 0 4px 5px #80c55e, 4px 0 5px #80c55e, 0 -4px 5px #80c55e;
 }
 
+.pagination-button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
 .alive {
   color: #00b0c8;
   font-weight: bold;
+  display: block;
 }
 
 .dead {
   color: red;
   font-weight: bold;
+  display: block;
 }
 
 

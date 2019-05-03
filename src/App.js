@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import axios from 'axios'
+import { animateScroll } from 'react-scroll';
 import './App.css'
 
 class App extends React.Component {
@@ -12,13 +13,15 @@ class App extends React.Component {
     infos: [],
     previouslyUrl: '/'
   }
+  
 
-  nextpage (urlString) {
+  changePage (urlString) {
     axios.get(urlString ? this.urlPagination(urlString) : this.state.info.next)
     .then(res => {
       const characters = res.data.results;
       const info = res.data.info;
       this.setState({ info, characters});
+      animateScroll.scrollToTop()
     })
   }
 
@@ -56,8 +59,8 @@ class App extends React.Component {
                         />
           })}
         </Row>
-        <Button className="pagination-button" onClick={() =>this.nextpage(this.state.info.next)}>Previous page</Button>
-        <Button className="pagination-button" onClick={() => this.nextpage()}>Next page</Button>
+        <Button className="pagination-button" onClick={() =>this.changePage(this.state.info.next)}>Previous page</Button>
+        <Button className="pagination-button" onClick={() => this.changePage()}>Next page</Button>
       </Container>
     </div>
   );

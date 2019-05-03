@@ -10,7 +10,7 @@ This: https://rickandmortyapi.com/
 ```
   git clone
   npm install
-  npm star
+  npm start
 ```
 
 ## How contribute? :goberserk:
